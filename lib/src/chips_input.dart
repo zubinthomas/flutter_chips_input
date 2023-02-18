@@ -485,11 +485,27 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   }
 
   @override
-  void showToolbar() {}
-
-  @override
   void insertTextPlaceholder(Size size) {}
 
   @override
   void removeTextPlaceholder() {}
+
+  @override
+  void updateEditingValueWithDeltas(List<TextEditingDelta> textEditingDeltas) {}
+
+  @override
+  void didChangeInputControl(
+      TextInputControl? oldControl, TextInputControl? newControl) {}
+
+  @override
+  void performSelector(String selectorName) {}
+
+  @override
+  void showToolbar() {}
+
+  // @override
+  // void insertTextPlaceholder(Size size) {}
+
+  // @override
+  // void removeTextPlaceholder() {}
 }
